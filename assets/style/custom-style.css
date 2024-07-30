@@ -82,11 +82,6 @@
   animation-iteration-count: 1;
 }
 
-.circle-button {
-  height: 50px;
-  width: 50px;
-}
-
 .truncateText {
   white-space: nowrap;
   overflow: hidden;
