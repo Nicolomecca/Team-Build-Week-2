@@ -148,3 +148,23 @@ const convertDuration = function(seconds){
     return `${minutes}:${remainingSeconds}`
 }
 albumData('75621062');
+
+
+
+  // Funzione per creare le card
+function createAlbumCards(albums) {
+    const cardsAlbumRow = document.getElementById('cardsAlbum')
+    albums.forEach((topAlbum) => {
+        cardsAlbumRow.innerHTML +=
+        `  <div class="card w-25" ">
+<img src="${topAlbum.album.cover_medium}" class="card-img-top" alt="img album">
+<div class="card-body">
+  <h5 class="card-title">${topAlbum.album.title}</h5>
+  <p class="card-text"></p>
+</div>
+</div>
+  `
+    });
+}
+
+createAlbumCards(albums);
